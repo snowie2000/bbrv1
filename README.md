@@ -1,8 +1,8 @@
 ## compile 
 ```
-apt install kernel-package
+apt install linux-headers-`uname -r`
 make
-insmod ./tcp_bbrplus.ko
+make install
 ```
 
 ## set as default congestion method
